@@ -1,0 +1,39 @@
+<html></html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="output">
+            <h1>Holi wishes to</h1>
+            <ul>
+
+            </ul>
+        </div>
+
+    </body>
+    <script> 
+const list = document.querySelector('.output ul');
+list.innerHTML ='';
+let greetings = ['Happy birthday', 'Happy birthday madhab','Happy Holi Prashant', 'Happy holi Shraya', 'Happy holi Shray', 'Happy holi Shaury', 'Happy holi shyam'];
+
+for(let i = 0; i <greetings.length; i++){
+   
+  if(greetings[i].indexOf("holi") != -1 ) {
+    let listItem = document.createElement('li');
+    listItem.textContent = greetings[i];
+    list.appendChild(listItem);
+  }
+}
+
+</script>
+
+<script src="./p2l17.js"></script>
+
+<script src="./p3l19.js"></script>
+<script src="./p4l20.js"></script>
+<script src="./p5l20.js"></script>
+<script src="./p6l22.js"></script>
+</html>
