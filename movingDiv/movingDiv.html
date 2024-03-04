@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Moving Dive</title>
+	
+	<style>
+		.divfix {
+			height: 600px;
+			width: 1365px;
+			background-color: rgba(122, 122, 131, 0.705);
+			border: 4px solid red;
+		}
+
+		.move {
+			height: 100px;
+			width: 100px;
+			background: rgba(173, 71, 131, 0.589);
+			border:2px solid rgb(0, 238, 255);
+			border-radius: 50%;
+			padding: 2%;
+			text-align: center;
+		}
+
+		.keydiv{
+			height: 26px;
+			width: 1365px;
+	
+		}
+	</style>
+</head>
+
+<body>
+	<div class="divfix">
+		<div class="move">
+			<strong id="msg">Start<strong>
+		</div>
+
+	</div>
+	<div class="keydiv text-center ">
+		<a href="#" class="btn btn-info" id="up"> Up</a>
+		<a href="#" class="btn btn-info"  id="down"> Bown</a>
+		<a href="#" class="btn btn-info"  id="left"> Left</a>
+		<a href="#" class="btn btn-info"  id="right">Right</a>
+	</div>
+	
+	<script type="text/javascript">
+	   $(document).on('click','#up',function(){
+		$('.move').css('margin-top','-=100px');
+		$('#msg').html("Up");
+		});
+	   $(document).on('click','#down',function(){
+		$('.move').css('margin-top','+=100px');
+		$('#msg').html("Down");
+		});
+	   $(document).on('click','#left',function(){
+		$('.move').css('margin-left','-=100px');
+		$('#msg').html("Left");
+		});
+	   $(document).on('click','#right',function(){
+		$('.move').css('margin-left','+=100px');
+		$('#msg').html("Right");
+		});
+	</script>
+</body>
+
+</html>

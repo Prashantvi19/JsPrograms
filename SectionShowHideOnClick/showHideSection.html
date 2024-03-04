@@ -1,0 +1,112 @@
+<!-- assignment 09-02-2023 sections show & hide on click -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Show Hide Section</title>
+</head>
+<style>
+	.div1{
+		padding: 1%;
+		background: red;
+		margin: 4% 16%;
+		border: 2px solid black;
+	}
+	.h1{
+		height: 35px;
+		width: 885px;
+		padding: 4px 11px;
+		font-size: medium;
+		background: blue;
+		border: 2px solid green;
+		border-radius: 5px;
+	}
+</style>
+
+<body>
+	<div class="div1">
+		<div>
+			<h5 class="h1" onclick="activate()"> <span id="pointOp1">&#9662;</span> <span id = "pointClo1">&#9656;</span> Lorem ipsum dolor  </h5>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium quos amet quia facilis
+				reprehenderit voluptatum ab atque dicta asperiores, dolores illo deleniti! Totam provident ad non! Illo,
+				asperiores nostrum fuga alias distinctio voluptate vel porro voluptatibus assumenda eveniet eligendi
+				corrupti iure ex ullam? Eius unde doloribus quod magni, ad quidem eligendi. Aspernatur praesentium quis
+				corporis laudantium iure enim? Dolore quam ratione alias molestias eius exercitationem perferendis magni
+				obcaecati nostrum! Cupiditate in at ab, aperiam explicabo temporibus amet qui harum sit neque, similique
+				eos atque. Tempore ut repellat iusto molestiae eligendi quae facilis ratione accusantium eaque commodi
+				reiciendis vitae maxime sapiente nemo quaerat beatae, consequuntur veniam animi, voluptate officiis rem
+				illo. Voluptas nostrum veniam doloribus alias, numquam labore delectus repellendus, sed consequatur
+				voluptatum, aut dolores veritatis unde animi dolorem sint eos inventore consectetur porro vero
+				similique. Quasi, culpa? Et, fuga. Totam beatae quisquam deleniti nisi unde. Dolore praesentium magnam
+				minima cumque porro, ad totam neque! Quae porro id labore, delectus nulla adipisci inventore eum
+				quibusdam unde, consectetur, nobis dolores eius iste. Excepturi facilis, aspernatur maxime illo tempora
+				molestiae obcaecati accusantium quis repellendus delectus sequi quasi quibusdam accusamus, sapiente,
+				quae minus id harum nemo vitae totam? Eos fugit itaque in iste.
+			</p>
+		</div>
+		<div>
+			<!-- <p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium quos amet quia facilis
+				reprehenderit voluptatum ab atque dicta asperiores, dolores illo deleniti! Totam provident ad non! Illo,
+				asperiores nostrum fuga alias distinctio voluptate vel porro voluptatibus assumenda eveniet eligendi
+				corrupti iure ex ullam? Eius unde doloribus quod magni, ad quidem eligendi. Aspernatur praesentium quis
+				corporis laudantium iure enim? Dolore quam ratione alias molestias eius exercitationem perferendis magni
+				obcaecati nostrum! Cupiditate in at ab, aperiam explicabo temporibus amet qui harum sit neque, similique
+				eos atque. Tempore ut repellat iusto molestiae eligendi quae facilis ratione accusantium eaque commodi
+				reiciendis vitae maxime sapiente nemo quaerat beatae, consequuntur veniam animi, voluptate officiis rem
+				illo. Voluptas nostrum veniam doloribus alias, numquam labore delectus repellendus, sed consequatur
+				voluptatum, aut dolores veritatis unde animi dolorem sint eos inventore consectetur porro vero
+				similique. Quasi, culpa? Et, fuga. Totam beatae quisquam deleniti nisi unde. Dolore praesentium magnam
+				minima cumque porro, ad totam neque! Quae porro id labore, delectus nulla adipisci inventore eum
+				quibusdam unde, consectetur, nobis dolores eius iste. Excepturi facilis, aspernatur maxime illo tempora
+				molestiae obcaecati accusantium quis repellendus delectus sequi quasi quibusdam accusamus, sapiente,
+				quae minus id harum nemo vitae totam? Eos fugit itaque in iste.
+			</p> -->
+		</div>
+		<div>
+			<!-- <p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium quos amet quia facilis
+				reprehenderit voluptatum ab atque dicta asperiores, dolores illo deleniti! Totam provident ad non! Illo,
+				asperiores nostrum fuga alias distinctio voluptate vel porro voluptatibus assumenda eveniet eligendi
+				corrupti iure ex ullam? Eius unde doloribus quod magni, ad quidem eligendi. Aspernatur praesentium quis
+				corporis laudantium iure enim? Dolore quam ratione alias molestias eius exercitationem perferendis magni
+				obcaecati nostrum! Cupiditate in at ab, aperiam explicabo temporibus amet qui harum sit neque, similique
+				eos atque. Tempore ut repellat iusto molestiae eligendi quae facilis ratione accusantium eaque commodi
+				reiciendis vitae maxime sapiente nemo quaerat beatae, consequuntur veniam animi, voluptate officiis rem
+				illo. Voluptas nostrum veniam doloribus alias, numquam labore delectus repellendus, sed consequatur
+				voluptatum, aut dolores veritatis unde animi dolorem sint eos inventore consectetur porro vero
+				similique. Quasi, culpa? Et, fuga. Totam beatae quisquam deleniti nisi unde. Dolore praesentium magnam
+				minima cumque porro, ad totam neque! Quae porro id labore, delectus nulla adipisci inventore eum
+				quibusdam unde, consectetur, nobis dolores eius iste. Excepturi facilis, aspernatur maxime illo tempora
+				molestiae obcaecati accusantium quis repellendus delectus sequi quasi quibusdam accusamus, sapiente,
+				quae minus id harum nemo vitae totam? Eos fugit itaque in iste.
+			</p> -->
+		</div>
+		<div>
+			<!-- <p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium quos amet quia facilis
+				reprehenderit voluptatum ab atque dicta asperiores, dolores illo deleniti! Totam provident ad non! Illo,
+				asperiores nostrum fuga alias distinctio voluptate vel porro voluptatibus assumenda eveniet eligendi
+				corrupti iure ex ullam? Eius unde doloribus quod magni, ad quidem eligendi. Aspernatur praesentium quis
+				corporis laudantium iure enim? Dolore quam ratione alias molestias eius exercitationem perferendis magni
+				obcaecati nostrum! Cupiditate in at ab, aperiam explicabo temporibus amet qui harum sit neque, similique
+				eos atque. Tempore ut repellat iusto molestiae eligendi quae facilis ratione accusantium eaque commodi
+				reiciendis vitae maxime sapiente nemo quaerat beatae, consequuntur veniam animi, voluptate officiis rem
+				illo. Voluptas nostrum veniam doloribus alias, numquam labore delectus repellendus, sed consequatur
+				voluptatum, aut dolores veritatis unde animi dolorem sint eos inventore consectetur porro vero
+				similique. Quasi, culpa? Et, fuga. Totam beatae quisquam deleniti nisi unde. Dolore praesentium magnam
+				minima cumque porro, ad totam neque! Quae porro id labore, delectus nulla adipisci inventore eum
+				quibusdam unde, consectetur, nobis dolores eius iste. Excepturi facilis, aspernatur maxime illo tempora
+				molestiae obcaecati accusantium quis repellendus delectus sequi quasi quibusdam accusamus, sapiente,
+				quae minus id harum nemo vitae totam? Eos fugit itaque in iste.
+			</p> -->
+		</div>
+	</div>
+
+</body>
+
+</html>
